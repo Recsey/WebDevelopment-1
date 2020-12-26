@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <title>Document Object Model</title>
+    <!-- <script src="harici.js" charset="utf-8"></script> -->
+
+  </head>
+  <body>
+<button onclick="renkDegistirme()">Dark Moda Geçiş Yap</button>
+
+<h1 id="baslik">Merhabalar</h1>
+
+<div class="aciklama">
+Burası Document Object Model çalıştığımız sayfadır.
+</div> <br>
+
+
+
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+
+
+
+<script type="text/javascript">
+    var saat=(new Date).getHours();
+    saat=6;
+    if(saat>18 || saat<5){
+      renkDegistirme();
+    }
+
+  function renkDegistirme(){
+
+    var bodyElementi=document.querySelector("body");
+    var buttonElementi = document.querySelector("button");
+    bodyElementi.classList.toggle("bg-dark");
+    bodyElementi.classList.toggle("text-light");
+    buttonElementi.classList.toggle("btn-dark");
+
+    if(bodyElementi.classList.contains("bg-dark")){
+      document.querySelector("button").innerText="Light Moda Geçiş Yap";
+    }else {
+      document.querySelector("button").innerText="Dark Moda Geçiş Yap";
+    }
+ }
+
+
+
+
+
+
+
+
+</script>
+  </body>
+</html>

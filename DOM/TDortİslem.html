@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>4 İşlem Yap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body class="container text-center">
+
+
+  <h1 class="m-5" >DÖRT iŞLEM</h1>
+  <span>
+  <input id="birincisayi" type="text" name="" value="">
+  <input id="ikincisayi" type="text" name="" value="">
+  </span>
+  <div class="islemler m-5 text-center">
+    <span>
+      <button onclick="toplama()">+</button>
+      <button onclick="cikarma()" >-</button>
+      <button onclick="carpma()" >*</button>
+      <button onclick="bolme()" >/</button>
+    </span>
+  </div>
+
+    <h3>Sonuç</h3>
+    <h3 id="sonuc"> </h3>
+
+  <script type="text/javascript">
+
+  var birinciSayiElementi=document.getElementById("birincisayi");
+  var ikinciSayiElementi=document.getElementById("ikincisayi");
+  var sonucElementi=document.getElementById("sonuc");
+
+
+    function toplama(sayi1,sayi2){
+      var sayi1 = parseInt(birinciSayiElementi.value);
+      var sayi2 = parseInt(ikinciSayiElementi.value);
+      var islemSonucu=sayi1+sayi2;
+      sonucElementi.innerText=islemSonucu;
+    }
+
+    function cikarma(){
+      var sayi1 = parseInt(birinciSayiElementi.value);
+      var sayi2 = parseInt(ikinciSayiElementi.value);
+      var  islemSonucu=sayi1-sayi2;
+      sonucElementi.innerText=islemSonucu;
+    }
+
+    function carpma(){
+      var sayi1 = parseInt(birinciSayiElementi.value);
+      var sayi2 = parseInt(ikinciSayiElementi.value);
+      var islemSonucu=sayi1*sayi2;
+      sonucElementi.innerText=islemSonucu;
+    }
+
+    function bolme(){
+      var sayi1 = parseInt(birinciSayiElementi.value);
+      var sayi2 = parseInt(ikinciSayiElementi.value);
+      var islemSonucu=sayi1/sayi2;
+      sonucElementi.innerText=islemSonucu;
+    }
+
+  </script>
+
+  </body>
+</html>

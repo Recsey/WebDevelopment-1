@@ -1,0 +1,135 @@
+
+.ortak{
+  float:left;
+  padding:10px;
+  margin:10px;
+  border-radius:25px;
+  box-sizing: border-box;
+
+}
+.title{
+  font-size: 1.5rem;
+  text-align: center;
+  color:white;
+  padding: 10px;
+  margin-top: 8px;
+  font-family: sans-serif;
+}
+.bilgiler{
+  color:white;
+  font-size:1rem;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 8px;
+}
+.fiyat{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 2rem;
+  color:white;
+  padding: 8px;
+
+}
+.dolar{
+  margin-bottom:8px;
+}
+.buton
+{
+  border: 0 ;
+    line-height: 2;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: black;;
+    border-radius: 20px;
+    margin-left: 0 auto;
+}
+.link
+{
+  margin:0 auto;
+  margin-top: 20px;
+  height: 30px;
+  width:110px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top:10px;
+}
+a{
+  text-decoration: none;
+  font-size: 1rem;
+  margin:auto 0;
+  color:black;
+}
+
+.hizala{
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* kutu1: başlangıç : #5FB4FE bitiş : #F439DA
+  kutu2: başlangıç : #FC20DA bitiş : #FAEB7F
+  kutu3:başlangıç : ##9455F6 bitiş : #3EFB85
+   */
+.icon1{
+  width: 100px;
+  height:90px;
+  border-radius: 50%;
+  background:linear-gradient(135deg,  #5FB4FE 0% ,#F439DA 100%);
+  font-size:3.2rem;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  box-shadow: 10px 10px 10px grey;
+}
+.icon2{
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+  background:linear-gradient(135deg,  #FC20DA 0% ,#FAEB7F 100%);
+  font-size:3.2rem;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  box-shadow: 10px 10px 10px grey;
+}
+.icon3{
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+  background:linear-gradient(135deg,  #9455F6 0% ,#3EFB85 100%);
+  font-size:3.2rem;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  box-shadow: 10px 10px 10px grey;
+}
+.kutu1{
+  background:linear-gradient(135deg,  #5FB4FE 0% ,#F439DA 100%);
+  width: 275px;
+  height: 400px;
+  margin-top: 25px;
+
+}
+
+.kutu2{
+  width: 275px;
+  height: 430px;
+  background:linear-gradient(135deg,  #FC20DA 0% ,#FAEB7F 100%);
+}
+
+.kutu3{
+  width: 275px;
+  height: 400px;
+  background:linear-gradient(135deg,  #9455F6 0% ,#3EFB85 100%);
+  margin-top: 25px;
+}

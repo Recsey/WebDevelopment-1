@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>İmage Gallery</title>
+  <link rel="stylesheet" href="css\bootstrap.css">
+  <link rel="stylesheet" href="css\style.css">
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="js\bootstrap.js" charset="utf-8"></script>
+
+</head>
+
+<body class="">
+  <section id="header" class="sticky-top bg-light">
+    <div class="container-fluid menu">
+      <nav class=" navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">Galeri</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link active" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">İletişim</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kategoriler
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Doğa</a>
+                <a class="dropdown-item" href="#">İnsanlar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Diğer Resimler</a>
+              </div>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Arama" aria-label="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Arama</button>
+          </form>
+          <button id="mode-btn" onclick="renkDegistirme()" class="btn dark-mode my-2 my-sm-0 ml-3 mr-0 " type="submit">☾ Dark</button>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+<section id="resimler">
+<div class="container-fluid resimler">
+
+
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1587903969015-5566de8427ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1566935727941-4f63db037eaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1571765402741-3a9bfb51a22f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1604388156457-3e08e1560824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1604180540768-78abbc4ab189?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1604065781737-82a0d8cca09a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1603955389958-8ab4c2025b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1603220485746-4395270d2aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1587903969015-5566de8427ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1591686124347-b0dc61418a08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1536516677467-a8cf206e1066?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1603300082978-47b164dde52c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1587903969015-5566de8427ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1566935727941-4f63db037eaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1571765402741-3a9bfb51a22f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1604388156457-3e08e1560824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1604180540768-78abbc4ab189?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1604065781737-82a0d8cca09a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1603955389958-8ab4c2025b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1603220485746-4395270d2aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1587903969015-5566de8427ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1591686124347-b0dc61418a08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1536516677467-a8cf206e1066?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="https://images.unsplash.com/photo-1603300082978-47b164dde52c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section id="footer" class="footer">
+  <div class="container-fluid">
+    <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Geri</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">İleri</a>
+    </li>
+  </ul>
+</nav>
+  </div>
+  <hr class="mr-5 ml-5">
+  <div class="d-flex align-items-center justify-content-between">
+
+
+
+    <span class="ml-3 text-muted">Bu sayfa bootstrap yardımıyla webdeveloper kursunda hazırlanmıştır.<br>
+      Daha fazla bilgi için <a href="#">TechproEducation</a> sayfasını ziyaret edebilirsiniz.</span>
+      <span class="text-right mr-3 "><a href="#">Yukarı Çık</a></span>
+  </div>
+
+
+</div>
+
+
+
+
+</section>
+
+<script type="text/javascript">
+
+  function renkDegistirme() {
+    var bodyElementi=document.querySelector("body");
+    var navbarElementi=document.querySelector(".navbar");
+    var navItemElementi=document.querySelectorAll("a");
+    var menuElementi=document.querySelector(".menu");
+    var footerElementi=document.querySelector(".footer");
+    var buttonElementi=document.getElementById("mode-btn");
+
+
+    bodyElementi.classList.toggle("bg-secondary");
+    bodyElementi.classList.toggle("text-light");
+    navbarElementi.classList.toggle("bg-dark");
+  
+
+    menuElementi.classList.toggle("bg-dark");
+    footerElementi.classList.toggle("bg-dark");
+    buttonElementi.classList.toggle("bg-light");
+    buttonElementi.classList.toggle("text-dark");
+
+
+    if (bodyElementi.classList.contains("bg-secondary")){
+
+      document.getElementById("mode-btn").innerText= " ☼ Light";
+    }else {
+
+      document.getElementById("mode-btn").innerText=" ☾  Dark";
+    }
+
+    for(var i=0; i<navItemElementi.length;i++){
+      navItemElementi[i].classList.toggle("text-white");
+      navItemElementi[i].classList.toggle("bg-dark");
+    }
+
+
+  }
+
+
+</script>
+</body>
+
+</html>

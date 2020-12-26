@@ -1,0 +1,26 @@
+:root{
+  --anarenk:orange;
+}
+
+body{
+  background-color: #f1faee;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 1)),
+                    url("https://i.pinimg.com/originals/5c/57/a8/5c57a8967bbd906f6a047e4c01adcc2a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand{
+  color:var(--anarenk) !important;
+  font-weight: bold;
+  font-size:1.8rem;
+}
+.populer-baslik{
+  background-color:var(--anarenk);
+  color:white;
+}
+.ekonomi{
+  border-left: 7px var(--anarenk) solid;
+  padding:0.8rem;
+  font-size:1.2rem;
+}

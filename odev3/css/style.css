@@ -1,0 +1,48 @@
+.arkaplan{
+  background-color: #95e1d3;
+  color:black;
+}
+.nav-radius{
+  border-radius: 1rem;
+  background-color: #f38181;
+}
+.navbar-brand{
+  font-family: 'Tangerine', cursive;
+  font-size: 2rem;
+}
+.buyukresim{
+  width:90%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px black;
+}
+.slogan{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: 'Ubuntu';
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color:black;
+
+
+}
+.icon{
+  width:90px;
+  height:90px;
+  border-radius:50%
+}
+.col{
+  padding:2%;
+}
+
+
+
+@media(min-width:992px){
+  .r-l-fluid-padding{
+    padding:2% 15%;
+  }
+}
+@media(max-width:991px){
+  .r-l-fluid-padding{
+    padding:2% 3%;
+  }
+}

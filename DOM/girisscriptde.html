@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+  <title>Signin Template for Bootstrap</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <style media="screen">
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -ms-flex-align: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #f5f5f5;
+    }
+    .form-signin {
+      width: 100%;
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+    .form-signin .checkbox {
+      font-weight: 400;
+    }
+    .form-signin .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-signin .form-control:focus {
+      z-index: 2;
+    }
+    .form-signin input[type="email"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .form-signin input[type="password"] {
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  </style>
+</head>
+<body >
+
+
+<script type="text/javascript">
+
+var bodyElementi=document.querySelector("body");
+bodyElementi.setAttribute("class", "text-center");
+
+var formElementi=document.createElement("form");
+formElementi.classList.add("form-signin");
+formElementi.setAttribute("onsubmit", "return false");
+bodyElementi.appendChild(formElementi);
+
+var h1Elementi=document.createElement("h1");
+var yazi = document.createTextNode("Please sign in");
+h1Elementi.appendChild(yazi);
+h1Elementi.classList.add("h3");
+h1Elementi.classList.add("mb-3");
+h1Elementi.classList.add("font-weight-normal");
+formElementi.appendChild(h1Elementi);
+
+var emailLabel=document.createElement("label");
+var label1 = document.createTextNode("Email address");
+emailLabel.appendChild(label1);
+emailLabel.classList.add("sr-only");
+emailLabel.setAttribute("for", "inputEmail");
+formElementi.appendChild(emailLabel);
+
+var emailKutusu=document.createElement("input");
+formElementi.appendChild(emailKutusu);
+emailKutusu.classList.add("form-control");
+emailKutusu.setAttribute("placeholder", "Email address");
+emailKutusu.setAttribute("type", "email");
+emailKutusu.setAttribute("id", "inputEmail");
+
+
+var sifreLabel=document.createElement("label");
+var label2 = document.createTextNode("Password");
+sifreLabel.appendChild(label2);
+formElementi.appendChild(sifreLabel);
+sifreLabel.classList.add("sr-only");
+sifreLabel.setAttribute("for", "inputPassword");
+
+
+var sifreKutusu=document.createElement("input");
+formElementi.appendChild(sifreKutusu);
+sifreKutusu.classList.add("form-control");
+sifreKutusu.setAttribute("placeholder", "Password");
+sifreKutusu.setAttribute("type", "password");
+sifreKutusu.setAttribute("id", "inputPassword");
+
+var divLabel=document.createElement("div");
+formElementi.appendChild(divLabel);
+divLabel.classList.add("checkbox");
+divLabel.classList.add("mb-3");
+
+
+var labelcheck=document.createElement("label");
+var label3 = document.createTextNode(" Remember me");
+divLabel.appendChild(labelcheck);
+
+var checkBoxElementi=document.createElement("input");
+checkBoxElementi.setAttribute("value", "remember-me");
+checkBoxElementi.setAttribute("type", "checkbox");
+labelcheck.appendChild(checkBoxElementi);
+labelcheck.appendChild(label3);
+
+var pMail=document.createElement("p");
+formElementi.appendChild(pMail);
+pMail.setAttribute("id", "email-kontrol-yazisi");
+
+var pSifre=document.createElement("p");
+formElementi.appendChild(pSifre);
+pSifre.setAttribute("id", "sifre-kontrol-yazisi");
+
+var tarih=document.createElement("p");
+formElementi.appendChild(tarih);
+var tarihYazi = document.createTextNode("© 2017-2018");
+tarih.appendChild(tarihYazi);
+tarih.classList.add("mt-5");
+tarih.classList.add("mb-3");
+tarih.classList.add("text-muted");
+
+
+emailKutusu.oninput = function() {girisKontrol()};
+sifreKutusu.oninput = function() {girisKontrol()};
+
+function girisKontrol(){
+
+    if(emailKutusu.value == "admin@admin.com"){
+      // email kontrol bölümüne - E-mail doğru
+      pMail.innerHTML = "E-Mail Doğru !";
+      pMail.classList.remove("text-danger");
+      pMail.classList.add("text-success");
+    }else{
+      // email kontrol bölümüne - E-mail hatalı
+      pMail.innerHTML = "E-Mail Hatalı !";
+      pMail.classList.remove("text-success");
+      pMail.classList.add("text-danger");
+    }
+    if(sifreKutusu.value == "1234"){
+      // şifre kontrol bölümüne - Şifre doğru
+      pSifre.innerHTML = "Şifre Doğru !";
+      pSifre.classList.remove("text-danger");
+      pSifre.classList.add("text-success");
+    }else{
+      // şifre kontrol bölümüne - Şifre hatalı
+      pSifre.innerHTML = "Şifre Hatalı !";
+      pSifre.classList.remove("text-success");
+      pSifre.classList.add("text-danger");
+    }
+    if(sifreKutusu.value == "1234" && emailKutusu.value == "admin@admin.com"){
+
+      formElementi.remove();
+      var hosgeldiniz = document.createElement("h1");
+
+      var yaziyeni = document.createTextNode("Hoşgeldiniz!");
+      hosgeldiniz.appendChild(yaziyeni);
+      hosgeldiniz.classList.add("text-primary");
+      document.body.appendChild(hosgeldiniz);
+    }
+  }
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

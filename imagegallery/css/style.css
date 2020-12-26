@@ -1,0 +1,25 @@
+body, .navbar{
+  background-color: white;
+}
+.navbar-brand{
+  font-size: 1.8rem;
+}
+.resimler img{
+  width: 100%;
+  height:100%;
+  padding:1%;
+}
+
+/* çünkü bootstrap.css'de .col-lg-3 paddinleft paddingright 15px'e sahipti  */
+
+.col-lg-3, .col-md-6, .col-sm-12{
+  padding:0;
+}
+.footer{
+  background-color:#f2cc8f;
+  padding: 2% 0;
+}
+.btn.dark-mode{
+  background-color: #343A40;
+  color:white;
+}

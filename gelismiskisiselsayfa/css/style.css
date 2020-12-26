@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@200&display=swap');
+body{
+  margin:0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+h1{
+  border-left:3mm ridge #ac4b1c;
+  background-color:#ac4b1c10;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+.container-fluid{
+  background-color: #bedbbb;
+  padding: 10px;
+  font-size: 2rem;
+  color:black ;
+  border-bottom: 1px solid;
+  position:sticky;
+  top:0px;
+
+}
+.sabit{
+  position: fixed;
+  right: 10px;
+  bottom:10px;
+  background-color: gray;
+  color:white;
+}
+.sol-sag-padding{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+.logo{
+  display: inline-block;
+  float:inherit;
+  color:black;
+  padding:5px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.miniresim{
+  width: 33px;
+  height:33px;
+}
+.linkler{
+  float:right;
+  height:75px;
+  width: 30%;
+  display: flex;
+  align-items:center;
+}
+.linkler a {
+  font-size: 1.2rem;
+  color:black;
+  text-decoration: none;
+  padding-left: 3px;
+  padding-right: 10px;
+  border: 2px solid;
+  background-color:#8db596;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.linkler a:hover{
+  font-size: 1.3rem;
+  background-color:#bedbbb;
+  border: 2px solid black;
+
+}
+.container{
+  background-color: #8db596;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.profil-resmi {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px 0 40px 0;
+}
+.hakkimda {
+  border: 1px solid #ac4b1c;
+  border-radius:30px 0 0 0;
+  padding: 2%;
+  background-color: #ffefa0;
+
+}
+.hakkimda-yazi {
+  padding-left: 2rem;
+}
+.hobilerim {
+  border:1px dashed #ac4b1c;
+  /*border-radius: 20px;*/
+  padding: 2%;
+  background-color: #ffd57e;
+  /*margin-top: 2%;*/
+  /*margin-bottom: 2%;*/
+  margin:1% 0;
+}
+.hobilerim-yazi {
+  padding-right: 2rem;
+}
+.hobi-resmi {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.bildigim-diller {
+  border:1px solid #ac4b1c;
+  border-radius:0 0  20px 0;
+  padding: 2%;
+  background-color: #fca652;
+}
+.bildigim-diller-yazi {
+  padding-left: 2rem;
+}
+.bildigim-diller-resmi {
+  width: 150px;
+  height: 150px;
+}
+
+/*En Alt Kısım */
+.container-alt{
+  display:flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footer-arkaplan{
+  background-color:#bedbbb;
+}
+.menu{
+  width: 25%;
+  padding:15px;
+}
+.baslik{
+  font-weight: 700;
+  color:white;
+}
+.menu ul li a{
+  list-style: none;
+  text-decoration: none;
+  color:#ffffff;
+}
+.menu ul{
+  /*Dededen gelen paddingi reddediyor.*/
+  padding:0;
+}
+.menu ul li{
+  list-style-type: none;
+  padding-top:5px;
+  padding-bottom:5px;
+
+}
+.menu ul li a:hover{
+  text-decoration: underline;
+}
+.ustegeridon{
+  background-color:#3b5249;
+  padding:10px;
+  text-align: center;
+}
+.alt-link{
+  text-decoration: none;
+  color:#dddddd;
+}
+.alt-link:hover{
+  text-decoration: underline;
+}
+.alt-link:hover  .ustegeridon{
+  background-color: #496247;
+}

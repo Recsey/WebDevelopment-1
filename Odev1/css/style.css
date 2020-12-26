@@ -1,0 +1,42 @@
+body{
+  margin:2% 10%;
+}
+.ust-bolum{
+  background-color: #cffffe;
+  color:black;
+  margin:30px 150px 0 150px;
+  width: auto;
+  height: auto;
+  padding: 2rem;
+}
+
+.orta-bolum{
+  background-color: #f9f7d9;
+  color:black;
+  margin:0 150px 0 150px;
+  width: auto;
+  height: auto;
+  padding: 2rem;
+}
+.alt-bolum{
+  background-color: #fce2ce;
+  color:black;
+  margin:0 150px 0 150px;
+  width: auto;
+  height: auto;
+  padding: 2rem;
+}
+img{
+  width: 150px;
+  height: 150px;
+}
+
+.profilresmi{
+  margin-right: 15px;
+}
+.hobiresmi{
+  margin-left:15px;
+}
+.dilresim{
+  margin-right:15px;
+}
