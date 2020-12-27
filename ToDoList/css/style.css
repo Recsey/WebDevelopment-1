@@ -1,0 +1,38 @@
+body{
+  background-color: #fae3d9;
+}
+.header {
+background-color:#61c0bf;
+}
+.custom-control{
+  padding:0 30%;
+}
+.bg-black{
+  background-color: black !important;
+  color:white;
+}
+.bg-gray{
+  background-color:  #212529 !important;
+}
+.input-group{
+  padding:1% 37%;
+  background-color: #bbded6;
+}
+.submitBtn{
+  background-color:#61c0bf;
+}
+.liste li{
+  list-style: none;
+  padding:2px 37% 2px 35%;
+
+}
+.alert{
+  background-color: #E35D6A;
+  border
+}
+.cizgi{
+  text-decoration: line-through;
+}
+.bg-tikla{
+  background-color: #79DFC1;
+}

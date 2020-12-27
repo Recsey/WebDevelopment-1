@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My To Do List</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+  <script type="text/javascript">
+    var bodyElementi = document.querySelector("body");
+
+    var headerElementi = document.createElement("div");
+    headerElementi.classList.add("header", "container-fluid", "text-center", "py-4");
+    bodyElementi.appendChild(headerElementi);
+
+    var darkdiv = document.createElement("div");
+    headerElementi.appendChild(darkdiv);
+    darkdiv.classList.add("custom-control", "custom-switch", "text-right", "container-fluid");
+    var darkinput = document.createElement("input");
+    darkdiv.appendChild(darkinput);
+    darkinput.classList.add("custom-control-input");
+    darkinput.setAttribute("type", "checkbox");
+    darkinput.setAttribute("id", "customSwitch1");
+    var darkLabel = document.createElement("label");
+    darkdiv.appendChild(darkLabel);
+    darkLabel.classList.add("custom-control-label");
+    darkLabel.setAttribute("for", "customSwitch1");
+    var darkLabelYazi = document.createTextNode("Gece Modu");
+    darkLabel.appendChild(darkLabelYazi);
+
+
+    var h1Elementi = document.createElement("h1");
+    var h1yazi = document.createTextNode("TO DO LIST");
+    h1Elementi.appendChild(h1yazi);
+    headerElementi.appendChild(h1Elementi);
+
+    var date = new Date();
+    var yil = date.getFullYear();
+    var ay = date.getMonth() + 1;
+    var gun = date.getDate();
+
+    var h2Elementi = document.createElement("h2");
+    var h2yazi = document.createTextNode(gun + "/" + ay + "/" + yil);
+    h2Elementi.appendChild(h2yazi);
+    headerElementi.appendChild(h2Elementi);
+
+
+    var divInput = document.createElement("div");
+    divInput.classList.add("input-group", "mb-3", "container-fluid");
+    bodyElementi.appendChild(divInput);
+
+    var inputElementi = document.createElement("input");
+    divInput.appendChild(inputElementi);
+    inputElementi.classList.add("form-control");
+    inputElementi.setAttribute("type", "text");
+    inputElementi.setAttribute("placeholder", "Yapılacak işi giriniz.");
+
+    var ekleElementi = document.createElement("button");
+    var butonyazi = document.createTextNode("Ekle");
+    ekleElementi.appendChild(butonyazi);
+    divInput.appendChild(ekleElementi);
+    ekleElementi.classList.add("btn", "submitBtn");
+    ekleElementi.setAttribute("type", "button");
+
+    var ulElementi = document.createElement("ul");
+    bodyElementi.appendChild(ulElementi);
+    ulElementi.classList.add("liste");
+
+
+    ekleElementi.onclick = function() {
+      ekle()
+    };
+
+    function ekle() {
+
+      var liElementi = document.createElement("li");
+
+      ulElementi.appendChild(liElementi);
+
+      var divLi = document.createElement("div");
+      liElementi.appendChild(divLi);
+
+      divLi.classList.add("alert", "px-4");
+      divLi.setAttribute("role", "alert");
+      var liYazi = document.createTextNode(inputElementi.value);
+      divLi.appendChild(liYazi);
+
+      var bittiBtn = document.createElement("button");
+      divLi.appendChild(bittiBtn);
+      bittiBtn.classList.add("btn", "float-right", "btn-sm", "bg-light");
+      var bittiyazi = document.createTextNode("Bitti");
+      bittiBtn.appendChild(bittiyazi);
+
+      inputElementi.value = "";
+
+      bittiBtn.onclick = function() {
+        divLi.classList.toggle("bg-tikla");
+        divLi.classList.toggle("cizgi");
+        if (divLi.classList.contains("bg-tikla")) {
+          bittiBtn.textContent = "Geri Al";
+        } else {
+          bittiBtn.textContent = "Bitti";
+        }
+
+
+      };
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var checkbox = document.querySelector('input[type="checkbox"]');
+
+      checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+          bodyElementi.classList.add("bg-dark");
+          headerElementi.classList.add("bg-black");
+          divInput.classList.add("bg-gray");
+
+        } else {
+          bodyElementi.classList.remove("bg-dark");
+          headerElementi.classList.remove("bg-black");
+          divInput.classList.remove("bg-gray");
+
+        }
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>
